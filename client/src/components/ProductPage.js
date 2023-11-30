@@ -30,7 +30,7 @@ function ProductPage({ updateCart, user }){
 
     const renderReviews = prodToRender.reviews.map((review) => {
         return (
-            <ReviewCard key={review.id} {...review} />
+            <ReviewCard key={review.id} {...review} product = {prodToRender} />
         )
     })
 

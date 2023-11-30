@@ -1,0 +1,5 @@
+# .gitignore
+
+# Ignore the .cache directory
+client/node_modules/.cache/
+

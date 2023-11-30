@@ -2,10 +2,14 @@ import { NavLink } from 'react-router-dom';
 import Logout from './Logout';
 import Search from './Search'
 import { FaShoppingCart, FaUserCircle, FaBars } from 'react-icons/fa';
-import Categories from './Categories';
 import { useState } from 'react';
+import { useContext } from 'react';
+import UserContext from './UserContext';
 
-function NavBar({ user, getUser }) {
+
+function NavBar() {
+    
+    const { user, getUser } = useContext(UserContext)
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 

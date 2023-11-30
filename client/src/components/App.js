@@ -14,6 +14,7 @@ import MakeupPage from "./MakeupPage";
 import HairPage from "./HairPage";
 import SkinPage from "./SkinPage";
 import ProductPage from "./ProductPage";
+import UserContext from "./UserContext";
 
 function App() {
 
@@ -74,6 +75,7 @@ function App() {
 
     return (
         <div className="App">
+          <UserContext.Provider value={{ user, getUser }}>
             <NavBar user={ user } getUser = { getUser }/>
             <Switch>
                 <Route exact path="/">
@@ -111,6 +113,7 @@ function App() {
                     <ProductPage updateCart={updateCart} user={ user }/>
                 </Route>
             </Switch>
+            </UserContext.Provider>
         </div>
     )
 }

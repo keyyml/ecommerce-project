@@ -3,3 +3,5 @@
 # Ignore the .cache directory
 client/node_modules/
 client/node_modules/.bin/
+server/routes/__pycache__/
+server/__pycache__/

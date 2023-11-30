@@ -50,7 +50,7 @@ if __name__ == '__main__':
             color = "Shade: Turks and Caicos",
             price = 7.99,
             brand = "e.l.f.",
-            image = "URL"
+            image = "https://i.ibb.co/3v4GWST/blush.jpg"
 
         ))
 

@@ -1,4 +1,4 @@
-from models import db
+from server.models import db
 from flask_migrate import Migrate
 from flask import Flask, request, url_for, redirect, jsonify
 from flask_sqlalchemy import SQLAlchemy

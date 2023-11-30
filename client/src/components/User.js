@@ -1,5 +1,5 @@
 import React from "react";
-import ReviewCard from "./ReviewCard";
+import UserReviews from "./UserReviews";
 
 function User({ user }) {
 
@@ -9,7 +9,7 @@ function User({ user }) {
 
   const renderReviews = user.reviews.map((review) => {
     return (
-        <ReviewCard key={review.id} {...review} user = {user} />
+        <UserReviews key={review.id} {...review} user = {user} />
     )
 })
 

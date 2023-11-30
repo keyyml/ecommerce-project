@@ -32,15 +32,17 @@ module.exports = {
         pinky: '#f8d3db',
         darkPinky: '#E474AF'
       },
-    },
-    fontFamily: {
-      sans: ["Inter", ...defaultTheme.fontFamily.sans],
-      stock: [defaultTheme.fontFamily.sans],
-    },
+      textDecoration: {
+        'underline': 'underline',
+      },
+      fontFamily: {
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        stock: [defaultTheme.fontFamily.sans],
+      },
   },
   variants: {
     extend: {},
   },
   plugins: [require("@tailwindcss/aspect-ratio")],
-};
-
+}
+}

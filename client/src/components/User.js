@@ -4,7 +4,7 @@ import ReviewCard from "./ReviewCard";
 function User({ user }) {
 
   if (!user) {
-    return <h1>Loading...</h1>;
+    return <h1>Loading...</h1>
   }
 
   const renderReviews = user.reviews.map((review) => {

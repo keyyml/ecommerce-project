@@ -16,7 +16,7 @@ function MakeupPage({updateCart, user}){
         } catch (error) {
           console.error('Error fetching products:', error)
         }
-      };
+      }
   
       fetchMakeup()
     }, [])

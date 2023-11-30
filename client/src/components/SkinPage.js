@@ -17,7 +17,7 @@ function SkinPage({updateCart, user}){
         } catch (error) {
           console.error('Error fetching products:', error)
         }
-      };
+      }
   
       fetchProds()
     }, [])

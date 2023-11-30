@@ -198,6 +198,77 @@ if __name__ == '__main__':
             image = "https://i.ibb.co/FJbyjF3/memas.png"
         ))
 
+        products_to_add.append(Product(
+            id = 18,
+            name = "Calm It Facial Care Discovery Kit",
+            color = "Fresh Farmacy Facial Soap (1.7 oz) Ultrabland Facial Cleanser (1.5 oz) Eau Roma Water Toner (3.3 oz)",
+            price = 46.00,
+            brand = "LUSH",
+            image = "https://i.ibb.co/YQGMvF3/lush.png"
+        ))
+
+        products_to_add.append(Product(
+            id = 19,
+            name = "Oil Control Deep Pore Charcoal Cleanser",
+            color = "Size: 6.77 oz",
+            price = 8.99,
+            brand = "Biore",
+            image = "https://i.ibb.co/pdR7PjP/biore.png"
+        ))
+
+        products_to_add.append(Product(
+            id = 20,
+            name = "Special Edition Airwrap Multi-Styler Complete Long in Blue Blush",
+            color = "Re-engineered attachments harness Enhanced Coanda airflow for faster, better and easier styling.",
+            price = 499.99,
+            brand = "Dyson",
+            image = "https://i.ibb.co/6WjKbRk/dyson.png"
+        ))
+
+        products_to_add.append(Product(
+            id = 21,
+            name = "No.6 Bond Smoother",
+            color = "Size: 3.3 oz",
+            price = 30.00,
+            brand = "OLAPLEX",
+            image = "https://i.ibb.co/bdwRPWr/25929909.png"
+        ))
+
+        products_to_add.append(Product(
+            id = 22,
+            name = "ULTRA DEFINING GEL Strong Hold No-Crunch Styler",
+            color = "Size: 12.0 oz",
+            price = 32.00,
+            brand = "DevaCurl",
+            image = "https://i.ibb.co/NW66D4m/25819023.png"
+        ))
+
+        products_to_add.append(Product(
+            id = 23,
+            name = "WAVE MAKER Lightweight Moisturizing Definer",
+            color = "Size: 5.0 oz",
+            price = 34.00,
+            brand = "DevaCurl",
+            image = "https://i.ibb.co/gWkptdN/dcurl.png"
+        ))
+
+        products_to_add.append(Product(
+            id = 24,
+            name = "Mighty Patch Original Acne Pimple Patches",
+            color = "36 ct",
+            price = 12.99,
+            brand = "Hero.",
+            image = "https://i.ibb.co/3MHQ4Qb/patches.png"
+        ))
+
+        products_to_add.append(Product(
+            id = 25,
+            name = "Niacinamide 10% + Zinc 1% Oil Control Serum",
+            color = "Size: 1.0 oz",
+            price = 6.00,
+            brand = "The Ordinary",
+            image = "https://i.ibb.co/kcvnkz2/ordi.png"
+        ))
 
 
         db.session.add_all(products_to_add)
@@ -212,9 +283,23 @@ if __name__ == '__main__':
             rating = 7,
             comment = "I Loved this product it made my routine so much better!"
         ))
-
         reviews_to_add.append(Review(
             id = 2,
+            product_id = 2,
+            user_id = 2,
+            rating = 10,
+            comment = "I Loved this shade!"
+        ))
+        reviews_to_add.append(Review(
+            id = 3,
+            product_id = 2,
+            user_id = 1,
+            rating = 4,
+            comment = "Too hard to blend.."
+        ))
+
+        reviews_to_add.append(Review(
+            id = 4,
             product_id = 1,
             user_id = 2,
             rating = 9,
@@ -222,7 +307,7 @@ if __name__ == '__main__':
         ))
 
         reviews_to_add.append(Review(
-            id = 3,
+            id = 5,
             product_id = 3,
             user_id = 1,
             rating = 8,
@@ -399,6 +484,73 @@ if __name__ == '__main__':
             id = 12,
             product_id = 8,
             category_id = 8
+        ))
+
+        product_categories_to_add.append(ProductCategory(
+            id = 13,
+            product_id = 13,
+            category_id = 8
+        ))
+
+        product_categories_to_add.append(ProductCategory(
+            id = 14,
+            product_id = 14,
+            category_id = 8
+        ))
+        product_categories_to_add.append(ProductCategory(
+            id = 15,
+            product_id = 15,
+            category_id = 8
+        ))
+        product_categories_to_add.append(ProductCategory(
+            id = 16,
+            product_id = 16,
+            category_id = 8
+        ))
+        product_categories_to_add.append(ProductCategory(
+            id = 17,
+            product_id = 17,
+            category_id = 8
+        ))
+        product_categories_to_add.append(ProductCategory(
+            id = 18,
+            product_id = 18,
+            category_id = 6
+        ))
+        product_categories_to_add.append(ProductCategory(
+            id = 19,
+            product_id = 19,
+            category_id = 6
+        ))
+        product_categories_to_add.append(ProductCategory(
+            id = 20,
+            product_id = 20,
+            category_id = 7
+        ))
+        product_categories_to_add.append(ProductCategory(
+            id = 21,
+            product_id = 21,
+            category_id = 7
+        ))
+        product_categories_to_add.append(ProductCategory(
+            id = 22,
+            product_id = 22,
+            category_id = 7
+        ))
+        product_categories_to_add.append(ProductCategory(
+            id = 23,
+            product_id = 23,
+            category_id = 7
+        ))
+        product_categories_to_add.append(ProductCategory(
+            id = 24,
+            product_id = 24,
+            category_id = 6
+        ))
+        product_categories_to_add.append(ProductCategory(
+            id = 25,
+            product_id = 25,
+            category_id = 6
         ))
 
 

@@ -78,8 +78,10 @@ function App() {
             <Switch>
                 <Route exact path="/">
                     <Banner />
-                    <Categories />
-                    <HomePage productsArray = {productsArray} updateCart={updateCart} user={ user }/>
+                    <div className="mt-96">
+                      <Categories />
+                      <HomePage productsArray = {productsArray} updateCart={updateCart} user={ user }/>
+                    </div>
                 </Route>
                 <Route exact path="/makeup-page">
                     <MakeupPage productsArray = {productsArray} prodCatArr = {prodCatArr} updateCart={updateCart} user={ user }/>

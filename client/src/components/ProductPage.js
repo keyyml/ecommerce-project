@@ -35,7 +35,7 @@ function ProductPage({ updateCart, user }){
     })
 
     return(
-<div className="bg-white p-8 shadow-md max-w-3xl mx-auto rounded-lg mt-8">
+<div className="bg-white p-8 shadow-md max-w-6xl mx-auto rounded-lg mt-8">
   <div className="flex">
     <div>
       <img

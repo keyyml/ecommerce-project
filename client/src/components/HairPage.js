@@ -11,7 +11,7 @@ function HairPage({updateCart, user}){
         try {
           const response = await axios.get('/products')
           const filteredProds = response.data.filter(product =>
-            product.product_categories.some(product_categories => product_categories.category_id === 6))
+            product.product_categories.some(product_categories => product_categories.category_id === 7))
           setProdsArr(filteredProds)
         } catch (error) {
           console.error('Error fetching products:', error)

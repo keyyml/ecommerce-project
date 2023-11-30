@@ -1,11 +1,17 @@
 import { NavLink } from 'react-router-dom';
 import Logout from './Logout';
 import Search from './Search'
-import { FaShoppingCart } from 'react-icons/fa'
-import { FaUserCircle } from "react-icons/fa";
+import { FaShoppingCart, FaUserCircle, FaBars } from 'react-icons/fa';
+import Categories from './Categories';
+import { useState } from 'react';
 
 function NavBar({ user, getUser }) {
 
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    const handleMenuClick = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+    };
     
 
     return(

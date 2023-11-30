@@ -41,7 +41,7 @@ function ProductCard({ id, name, price, image, brand, updateCart, user}) {
 
   return (
     <div className="hover:bg-gray-200 max-w-xs rounded overflow-hidden shadow-lg bg-white px-6 py-4">
-    <img onClick={renderProdPage} className="w-full"  alt={name} />
+    <img onClick={renderProdPage} src={image} className="w-full"  alt={name} />
     <div className="">
       <div onClick={renderProdPage} className="font-bold text-xl mb-2">{name}</div>
       <p className="text-gray-700 text-base">{brand}</p>
@@ -56,7 +56,7 @@ function ProductCard({ id, name, price, image, brand, updateCart, user}) {
         <div className="flex flex-row items-center mt-4">
           <button
             onClick={addToOrder}
-            className="bg-darkPinky hover:bg-pinky text-zinc-900 text-lg rounded w-32 mr-2"
+            className="bg-darkPinky hover:bg-pinky text-white text-lg rounded w-32 mr-2"
           >
           Add to Order
           </button>

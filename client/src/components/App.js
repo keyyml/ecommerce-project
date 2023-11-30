@@ -19,7 +19,6 @@ import UserContext from "./UserContext";
 function App() {
 
     const [productsArray, setProductsArray] = useState([])
-    const [prodCatArr, setProdCatArr] = useState([])
     const [orderDetails, setOrderDetails] = useState(null)
     const [user, setUser] = useState(null)
 
@@ -86,7 +85,7 @@ function App() {
                     </div>
                 </Route>
                 <Route exact path="/makeup-page">
-                    <MakeupPage productsArray = {productsArray} prodCatArr = {prodCatArr} updateCart={updateCart} user={ user }/>
+                    <MakeupPage productsArray = {productsArray} updateCart={updateCart} user={ user }/>
                 </Route>
                 <Route exact path="/hair-page">
                     <HairPage updateCart={updateCart} user={ user }/>

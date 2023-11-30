@@ -16,7 +16,7 @@ function Banner() {
     }, 5000)
 
     return () => clearInterval(interval)
-  }, [])
+  }, [images.length])
 
   return (
     <div className="justify-center mt-8">

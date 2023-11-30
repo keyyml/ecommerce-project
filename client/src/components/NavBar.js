@@ -1,8 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import Logout from './Logout';
 import Search from './Search'
-import { FaShoppingCart, FaUserCircle, FaBars } from 'react-icons/fa';
-import { useState } from 'react';
+import { FaShoppingCart, FaUserCircle } from 'react-icons/fa';
 import { useContext } from 'react';
 import UserContext from './UserContext';
 
@@ -10,13 +9,6 @@ import UserContext from './UserContext';
 function NavBar() {
     
     const { user, getUser } = useContext(UserContext)
-
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-    const handleMenuClick = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-    };
-    
 
     return(
         <div className="w-full h-32 bg-black flex items-center">

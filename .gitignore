@@ -1,5 +1,5 @@
 # .gitignore
 
 # Ignore the .cache directory
-client/node_modules/.cache/
-
+client/node_modules/
+client/node_modules/.bin/
